@@ -1,2 +1,0 @@
-This is merge conflit 
-this is merge master
