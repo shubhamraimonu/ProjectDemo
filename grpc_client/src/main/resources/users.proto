@@ -1,0 +1,20 @@
+syntax="proto3";
+
+option java_package="com.Grpc";
+
+service users {
+
+rpc enter(LogRequest) returns (LogResponse);
+
+}
+
+message LogRequest{
+ string name=1;
+ string pass=2;
+ }
+
+ message LogResponse{
+ string mes=1;
+ string code=2;
+ }
+ 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    
+    
+   
+    
+    
+   <!--  <bean  class="com.auto.Address"  name ="address1"  >
+   <property name="city" value="Nagsar" />
+   <property name="distric" value="Ghazipur"/>
+    </bean>
+    
+      <bean  class="com.auto.Address"  name ="address2"  >
+   <property name="city" value="chotu" />
+   <property name="distric" value="utt"/>
+    </bean> -->
+    
+    
+    <bean  class="com.springcore.Student"  name="student1"     >
+   <constructor-arg>
+   <value>12</value>
+   </constructor-arg>
+   <constructor-arg>
+   <value>Shubham</value></constructor-arg>
+   <!-- <constructor-arg><value>ghazipr</value></constructor-arg> -->
+    </bean>
+    
+   
+     <context:annotation-config/>
+    </beans>
+   
