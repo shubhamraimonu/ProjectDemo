@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:u="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    "> 
+    
+    
+   <u:list   list-class="java.util.ArrayList"  id="list">
+   <value>dvv</value>
+  <value>fdsfsd</value> 
+   </u:list>
+   
+   <u:map  map-class="java.util.HashMap"  id="map"  >
+   <entry   key="name"  value="thans" ></entry>
+   <entry   key="name1"  value="shivani"></entry>
+   <entry   key="namwe2"     value="rAtan" ></entry>
+   
+   </u:map>
+   
+   <u:properties id="prop">
+   <prop  key="driver">  com.mysql</prop>
+   </u:properties>
+    
+    
+     <bean   class="com.alone.Person" name="person">
+     <property  name="friend">
+       <ref  bean="list"></ref>
+     </property>
+       <property  name="map">
+       <ref  bean="map"></ref>
+     </property>
+       <property  name="properties">
+       <ref  bean="prop"></ref>
+     </property>
+     
+     
+
+  </bean>
+    
+   <!--  <bean  class="com.auto.Address"  name ="address1"  >
+   <property name="city" value="Nagsar" />
+   <property name="distric" value="Ghazipur"/>
+    </bean>
+    
+      <bean  class="com.auto.Address"  name ="address2"  >
+   <property name="city" value="chotu" />
+   <property name="distric" value="utt"/>
+    </bean> -->
+    
+    
+    
+    
+    
+<!--     <bean  class="com.springcore.Student"  name="student1"     >
+   <constructor-arg>
+   <value>12</value>
+   </constructor-arg>
+   <constructor-arg>
+   <value>Shubham</value></constructor-arg>
+   <constructor-arg><value>ghazipr</value></constructor-arg>
+    </bean> -->
+    
+<!--   <util:list list-class="java.util.LinkedList"  id="friends">
+  <value>dvv</value>
+  <value>fdsfsd</value>  
+  </util:list> -->
+  
+
+  
+  
+     <context:annotation-config/>
+    </beans>
+   
